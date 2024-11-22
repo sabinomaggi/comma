@@ -1,0 +1,6 @@
+# macOS junk
+.DS_store
+
+# sparse files/directories
+*.OLD
+# *.md
