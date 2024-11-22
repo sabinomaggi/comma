@@ -91,9 +91,9 @@ func CommentFromForm(form url.Values) (Comment, error) {
 	if form.Get("name") == "" {
 		return Comment{}, fmt.Errorf("name is required")
 	}
-	if form.Get("email") == "" {
-		return Comment{}, fmt.Errorf("email is required")
-	}
+	// if form.Get("email") == "" {
+	//     return Comment{}, fmt.Errorf("email is required")
+	// }
 	if form.Get("post") == "" {
 		return Comment{}, fmt.Errorf("post is required")
 	}
