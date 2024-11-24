@@ -64,7 +64,7 @@ func (c Comment) tmpName() string {
 }
 
 func (c Comment) fileName() string {
-	return fmt.Sprintf("%s-%d.%d.cmt", c.Parent, c.Ts.Unix(), c.Seq)
+	return fmt.Sprintf("%s-%d.%d.xml", c.Parent, c.Ts.Unix(), c.Seq)
 }
 
 func (c Comment) Save(path string) error {
@@ -101,7 +101,7 @@ func (c Comment) Save(path string) error {
 }
 
 func FindComments(path, slug string) ([]Comment, error) {
-	re := regexp.MustCompile("^" + slug + "-([0-9]{10})\\.([0-9]+)\\.cmt$")
+	re := regexp.MustCompile("^" + slug + "-([0-9]{10})\\.([0-9]+)\\.xml$")
 	dir, err := os.Open(path)
 	if err != nil {
 		return nil, err
