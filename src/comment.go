@@ -70,7 +70,8 @@ func (c Comment) fileName() string {
 func (c Comment) Save(path string) error {
 	// beautify output of XML file
 	//-- data, err := xml.Marshal(c)
-	data, err := xml.MarshalIndent(c, "", "  ")
+	data, err := xml.MarshalIndent(c, "", "    ")
+
 	if err != nil {
 		fmt.Printf("comment %s can't be marshalled: %s\n", c, err)
 		return err
