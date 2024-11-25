@@ -1,3 +1,20 @@
+Comma: a super simple comment server for static websites, written in Go
+
+This means your website is no longer purely static, but it's a simple, fairly pragmatic solution to dynamically save and load comments (using javascript)
+
+**NOTE**: The original source code has been slightly modified by SM to use Comma to serve comments to his Jekyll-based website [https://melabit.com](https://melabit.com), by:
+- removing the mandatory request for an email address;
+- indenting comment tags;
+- changing the extension of the comment files from `.cmt` to `.xml` (as they actually are).
+
+Also, the optional "special" argument and the corresponding form element in the html/javascript page used to integrate comments into Jekyll, have been replaced by a checkbox that must be selected before submitting the form.
+
+All Comma modified code is in my own branch `sm`.
+
+---
+
+# Original README
+
 Comma: a super simple comment server for static websites, in go
 
 This means your website is no longer purely static, but it's a simple, fairly pragmatic solution to dynamically save and load comments (using javascript)
