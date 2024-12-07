@@ -9,7 +9,7 @@ This means your website is no longer purely static, but it's a simple, fairly pr
 
 Also, the optional "special" argument and the corresponding form element in the html/javascript page used to integrate comments into Jekyll, have been replaced by a checkbox that must be selected before submitting the form.
 
-All Comma modified code is in my own branch `sm`.
+All modified code is in branch `devel` and has now been merged with `master`.
 
 ---
 
